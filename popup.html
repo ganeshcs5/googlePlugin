@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Caller</title>
+  <style>
+    /* Set the desired width and height for the popup */
+    body {
+      width: 500px; /* Adjust the width as needed */
+      height: 600px; /* Adjust the height as needed */
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #apiResponse {
+      white-space: pre-wrap;
+      background-color: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+      height: 300px; /* Adjust the height as needed */
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Call an API</h1>
+  <input type="text" id="apiUrl" placeholder="Enter API URL" />
+  <button id="callApi">Call API</button>
+  <pre id="apiResponse"></pre>
+
+  <script src="popup.js"></script>
+</body>
+</html>
